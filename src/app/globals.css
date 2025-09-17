@@ -11,6 +11,10 @@
   --color-light: 226, 232, 240;    /* Light Slate */
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #fff;
   background-color: rgb(var(--color-accent));

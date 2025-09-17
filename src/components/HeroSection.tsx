@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -52,7 +53,7 @@ export default function HeroSection() {
             </motion.h1>
           </motion.div>
           
-          <motion.p
+                    <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -66,21 +67,23 @@ export default function HeroSection() {
             Desenvolvemos softwares inteligentes e agentes de IA personalizados para otimizar processos e automatizar tarefas.
           </motion.p>
 
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ 
-              type: "spring", 
-              stiffness: 400, 
-              damping: 10, 
-              delay: 1.6 
-            }}
-            whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(59, 130, 246, 0.6)" }}
-            whileTap={{ scale: 0.95 }}
-            className="btn-primary"
-          >
-            Saiba Mais
-          </motion.button>
+          <Link href="#services" className="inline-block mt-8">
+            <motion.button
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 400, 
+                damping: 10, 
+                delay: 1.6 
+              }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(59, 130, 246, 0.6)" }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-primary"
+            >
+              Saiba Mais
+            </motion.button>
+          </Link>
         </div>
       </div>
     </div>
