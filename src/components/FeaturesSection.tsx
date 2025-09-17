@@ -46,7 +46,7 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 p-8 rounded-xl shadow-lg hover:shadow-blue-500/20 transition-all duration-300 flex flex-col items-center text-center hover:border-blue-500/50"
+              className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 p-8 rounded-xl shadow-lg hover:shadow-blue-500/20 transition-all duration-150 flex flex-col items-center text-center hover:border-blue-500/50"
             >
               <div className="p-4 rounded-full bg-blue-900/50 text-blue-400 mb-4">
                 <Icon size={28} />

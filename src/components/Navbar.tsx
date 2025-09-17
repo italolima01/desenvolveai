@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,10 @@ export default function Navbar() {
       <div className="container mx-auto">
         <div className="glass-effect rounded-xl px-6 py-4 shadow-2xl border border-[rgba(59,130,246,0.35)]">
           <div className="flex justify-between items-center relative">
-            <div className="w-1/4">
-              <Link href="/" className="text-2xl font-bold text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
-                DESENROLA.AI
+                        <div className="w-1/4">
+              <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+                <Image src="/images/Logo_DesenrolaAi.svg" alt="Desenrola.AI Logo" width={64} height={64} />
+                <span>DESENROLA.AI</span>
               </Link>
             </div>
 

@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import ServicesSection from '@/components/ServicesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import InnovationSection from '@/components/InnovationSection';
+import CtaSection from '@/components/CtaSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <FeaturesSection />
       <InnovationSection />
+      <CtaSection />
     </main>
   );
 }
