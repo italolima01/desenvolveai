@@ -33,7 +33,7 @@ export default function ServicesSection() {
     <section id="services" className="relative bg-white py-20 pb-48 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">O que oferecemos</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">O que oferecemos</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">

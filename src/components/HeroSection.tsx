@@ -33,7 +33,7 @@ export default function HeroSection() {
                 damping: 15,
                 delay: 0.2 
               }}
-              className="text-5xl md:text-7xl font-bold mb-6 text-white"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-white"
             >
               <motion.span
                 initial={{ opacity: 0, filter: "blur(8px)" }}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             </motion.h1>
           </motion.div>
           
-                    <motion.p
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -62,7 +62,7 @@ export default function HeroSection() {
               damping: 20,
               delay: 1.2 
             }}
-            className="text-lg md:text-xl mb-8 text-gray-300"
+            className="text-base sm:text-lg md:text-xl mb-8 text-gray-300"
           >
             Desenvolvemos softwares inteligentes e agentes de IA personalizados para otimizar processos e automatizar tarefas.
           </motion.p>

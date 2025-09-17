@@ -40,15 +40,15 @@ export default function InnovationSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-6"
             >
-              <h2 className="text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
                 Potencializando negócios com soluções inovadoras de TI
               </h2>
 
-              <p className="text-gray-300 text-lg mb-6">
+              <p className="text-gray-300 text-base sm:text-lg mb-6">
                 Na <span className="font-semibold text-[rgb(var(--color-primary))]">Desenrola</span>, somos movidos pela paixão por tecnologia e inovação. Nosso objetivo é simples: ajudar sua empresa a alcançar novos patamares através de soluções inteligentes em IA e software personalizado.
               </p>
 
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-base sm:text-lg">
                 Unimos conhecimento técnico e visão estratégica para desenvolver e implementar soluções que automatizam processos, aumentam a produtividade e impulsionam o crescimento do seu negócio. Atendemos empresas de diferentes setores, criando soluções exclusivas e personalizadas que se adaptam às necessidades únicas de cada cliente.
               </p>
 
