@@ -8,7 +8,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Desenrola AI",
-  description: "Plataforma completa para gestão imobiliária",
+  description: "",
 };
 
 export default function RootLayout({

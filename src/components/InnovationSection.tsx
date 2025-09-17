@@ -52,13 +52,6 @@ export default function InnovationSection() {
                 Unimos conhecimento técnico e visão estratégica para desenvolver e implementar soluções que automatizam processos, aumentam a produtividade e impulsionam o crescimento do seu negócio. Atendemos empresas de diferentes setores, criando soluções exclusivas e personalizadas que se adaptam às necessidades únicas de cada cliente.
               </p>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="mt-8 px-6 py-3 btn-primary"
-              >
-                Discover More
-              </motion.button>
             </motion.div>
           </div>
         </div>

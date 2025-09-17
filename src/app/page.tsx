@@ -1,9 +1,9 @@
 'use client';
 
 import HeroSection from '@/components/HeroSection';
-import InnovationSection from '@/components/InnovationSection';
 import Navbar from '@/components/Navbar';
 import ServicesSection from '@/components/ServicesSection';
+import FeaturesSection from '@/components/FeaturesSection';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ServicesSection />
-      <InnovationSection />
+      <FeaturesSection />
     </main>
   );
 }
