@@ -34,6 +34,7 @@ export default function ServicesSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">O que oferecemos</h2>
+          <p className="text-gray-600 mt-4 text-base sm:text-lg">Descomplicamos a tecnologia para você focar no que importa.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">

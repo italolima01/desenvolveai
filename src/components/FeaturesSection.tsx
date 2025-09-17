@@ -27,7 +27,7 @@ const features = [
 ];
 
 export default function FeaturesSection() {
-  return (
+  return (<>
     <section id="features" className="relative bg-gradient-to-br from-black via-[#030712] to-black text-white py-20 px-4">
       {/* Gradiente radial sutil para textura */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(59,130,246,0.12)_1px,transparent_1px)] [background-size:16px_16px] opacity-30" />
@@ -58,5 +58,5 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
-  );
+  </>);
 }

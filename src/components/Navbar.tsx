@@ -1,8 +1,9 @@
 'use client';
 
 // Navbar component - Desktop and Mobile menus
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import NextLink from 'next/link'; // Renomeado para evitar conflito
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -15,7 +16,7 @@ export default function Navbar() {
         <div className="glass-effect rounded-xl px-6 py-4 shadow-2xl border border-[rgba(59,130,246,0.35)]">
           <div className="flex justify-between items-center relative">
                         <div className="w-1/4">
-              <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+              <Link to="hero" spy={true} smooth={true} offset={-70} duration={500} className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 <Image src="/images/Logo_DesenrolaAi.svg" alt="Desenrola.AI Logo" width={64} height={64} />
                 <span>DESENROLA.AI</span>
               </Link>
@@ -23,16 +24,16 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex justify-center items-center space-x-8 flex-1">
-              <Link href="/" className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+              <Link to="hero" spy={true} smooth={true} offset={-70} duration={500} className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 Home
               </Link>
-              <Link href="#services" className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+              <Link to="services" spy={true} smooth={true} offset={-70} duration={500} className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 Serviços
               </Link>
-              <Link href="/careers" className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+              <NextLink href="/careers" className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 Cases
-              </Link>
-              <Link href="#about" className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
+              </NextLink>
+              <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 Sobre
               </Link>
             </div>
@@ -82,18 +83,18 @@ export default function Navbar() {
                 className="absolute top-16 left-0 right-0 glass-effect rounded-xl mt-2 md:hidden"
               >
                 <div className="flex flex-col items-center py-4 space-y-4">
-                  <Link href="/" className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
+                  <Link to="hero" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setIsOpen(false)} className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
                     Home
                   </Link>
-                  <Link href="#services" className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
+                  <Link to="services" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setIsOpen(false)} className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
                     Serviços
                   </Link>
-                  <Link href="#about" className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
+                  <Link to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setIsOpen(false)} className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
                     Sobre
                   </Link>
-                  <Link href="/careers" className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
+                  <NextLink href="/careers" className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
                     Cases
-                  </Link>
+                  </NextLink>
                 </div>
                 <div className="flex justify-center py-4">
                   <button className="btn-primary">

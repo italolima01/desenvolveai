@@ -1,11 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function HeroSection() {
   return (
-    <div className="relative h-screen flex items-center justify-center text-center">
+    <div id="hero" className="relative h-screen flex items-center justify-center text-center">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-gradient-to-br from-black via-[#030712] to-black"
@@ -14,7 +14,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom gradient to transition from blue to white */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 md:h-28 bg-gradient-to-b from-transparent to-white/95" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 md:h-28 bg-gradient-to-b from-transparent to-white/100" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4">
@@ -67,7 +67,14 @@ export default function HeroSection() {
             Desenvolvemos softwares inteligentes e agentes de IA personalizados para otimizar processos e automatizar tarefas.
           </motion.p>
 
-          <Link href="#services" className="inline-block mt-8">
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70} // Ajuste o offset se a barra de navegação fixa estiver cobrindo a seção
+            duration={500}
+            className="inline-block mt-8"
+          >
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

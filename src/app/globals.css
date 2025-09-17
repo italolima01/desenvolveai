@@ -12,7 +12,18 @@
 }
 
 html, body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+}
+
+/* Tenta aplicar scroll-behavior a qualquer elemento que seja um contêiner de rolagem */
+:root, body, html, [data-scroll-container], [data-simplebar-wrapper], [data-simplebar-content-wrapper], [data-simplebar-placeholder], [data-simplebar-track], [data-simplebar-scrollbar], [data-simplebar] {
+  scroll-behavior: smooth !important;
+}
+
+/* Para elementos com overflow */
+div[style*="overflow-y: scroll"], div[style*="overflow-y: auto"],
+div[style*="overflow: scroll"], div[style*="overflow: auto"] {
+  scroll-behavior: smooth !important;
 }
 
 body {
