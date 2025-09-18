@@ -13,9 +13,7 @@
 
 html, body {
   scroll-behavior: smooth !important;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden; /* Ensure no horizontal scroll on the root elements */
+
 }
 
 /* Tenta aplicar scroll-behavior a qualquer elemento que seja um contêiner de rolagem */
