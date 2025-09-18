@@ -80,7 +80,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="absolute top-16 left-0 right-0 bg-gray-900/80 backdrop-blur-xl rounded-xl mt-2 md:hidden z-50"
+                className="absolute top-16 left-0 right-0 bg-gray-900/80 backdrop-blur-xl rounded-xl mt-2 md:hidden z-50 px-6"
               >
                 <div className="flex flex-col items-center py-4 space-y-4">
                   <Link to="hero" spy={true} smooth={true} offset={-70} duration={500} onClick={() => setIsOpen(false)} className="text-white hover:text-[rgb(var(--color-secondary))] transition-all duration-300 hover:scale-105 transform">
