@@ -40,9 +40,9 @@ export default function Navbar() {
             
             {/* Contact Button */}
             <div className="hidden md:block w-1/4 text-right">
-              <button className="btn-primary">
+              <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="btn-primary">
                 Fale Conosco
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
