@@ -73,7 +73,7 @@ export default function HeroSection() {
             smooth={true}
             offset={-70} // Ajuste o offset se a barra de navegação fixa estiver cobrindo a seção
             duration={500}
-            className="inline-block mt-8"
+            className="inline-block mt-8 hover:text-blue-400 transition-colors"
           >
             <motion.button
               initial={{ opacity: 0, scale: 0.8 }}
@@ -84,7 +84,7 @@ export default function HeroSection() {
                 damping: 10, 
                 delay: 1.6 
               }}
-              whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(59, 130, 246, 0.6)" }}
+              whileHover={{ scale: 1.08, boxShadow: "0 0 20px rgba(14, 165, 233, 0.6)" }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
             >

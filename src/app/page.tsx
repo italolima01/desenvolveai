@@ -6,6 +6,7 @@ import ServicesSection from '@/components/ServicesSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import InnovationSection from '@/components/InnovationSection';
 import CtaSection from '@/components/CtaSection';
+import Footer from '@/components/Footer'; // Importar o componente Footer
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FeaturesSection />
       <InnovationSection />
       <CtaSection />
+      <Footer /> {/* Adicionar o componente Footer */}
     </main>
   );
 }

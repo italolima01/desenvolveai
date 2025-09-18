@@ -15,7 +15,7 @@ export default function CtaSection() {
             Pronto para transformar seu negócio com <span className="text-[rgb(var(--color-primary))]">IA</span>?
           </h2>
           <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-            Vamos conversar sobre como nossas soluções de inteligência artificial podem impulsionar seus resultados.
+            Vamos conversar sobre como nossas soluções de inteligência artificial podem impulsionar seus resultados!
           </p>
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: '0px 0px 30px rgba(59, 130, 246, 0.7)' }}
