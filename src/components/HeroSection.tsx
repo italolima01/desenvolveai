@@ -8,7 +8,7 @@ export default function HeroSection() {
     <div id="hero" className="relative h-screen flex items-center justify-center text-center overflow-x-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-black via-[#030712] to-black"
+        className="absolute inset-0 w-full h-full bg-gradient-to-br from-black via-[#030712] to-black"
       >
         <div className="absolute inset-0 bg-[radial-gradient(rgba(59,130,246,0.35)_1px,transparent_1px)] [background-size:16px_16px] opacity-30" />
       </div>
