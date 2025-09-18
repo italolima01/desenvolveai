@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 Landing Page – Desenrola AI
 
-## Getting Started
+Landing page oficial da Desenrola AI, desenvolvida em Figma e implementada em código para apresentar a empresa, seus serviços de Inteligência Artificial sob medida e permitir que visitantes testem nosso agente de IA em tempo real.
 
-First, run the development server:
+📋 Estrutura da Página
 
-```bash
+- Header – Logo, menu e CTA inicial
+
+- Hero Section – Headline impactante, subtítulo e botão de ação
+
+- Serviços – Cards apresentando soluções em IA e software
+
+- Diferenciais – Motivos para escolher a Desenrola AI
+
+- Cases – Exemplos de aplicações e projetos
+
+- Depoimentos – Feedback de clientes
+
+- CTA Final – Chamada forte para ação (Demo, WhatsApp, Contato)
+
+- Footer – Links, contato e redes sociais
+
+- Agente de IA – Chat interativo para demonstração dos serviços
+
+🎨 Design
+
+- Protótipo criado no Figma
+
+- Paleta de cores baseada em tons azul e branco modernos
+
+- Estilo moderno com sombras, gradientes e sobreposição de blocos
+
+🚀 Tecnologias Utilizadas
+
+- Frontend: React + TailwindCSS
+
+- Protótipo: Figma
+
+- IA: OpenAI API (customizado para demonstração)
+
+- Deploy: Vercel / Netlify
+
+⚙️ Como rodar localmente
+# Clonar repositório
+git clone https://github.com/seu-usuario/desenrola-ai-landing.git
+
+# Entrar na pasta
+cd desenrola-ai-landing
+
+# Instalar dependências
+npm install
+
+# Rodar em ambiente local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Acesse em: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Roadmap
 
-## Learn More
+ Protótipo no Figma
 
-To learn more about Next.js, take a look at the following resources:
+ Estrutura de landing page implementada
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Integração com agente de IA
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Integração com CRM
 
-## Deploy on Vercel
+ Otimização SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📞 Contato
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📩 contato@desenrola.ai
+
+🌐 www.desenrola.ai
+
+⚡ Desenrola AI – A tecnologia que descomplica.
