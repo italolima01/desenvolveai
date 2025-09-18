@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function InnovationSection() {
   return (
-    <section id="about" className="relative bg-gradient-to-br from-black via-[#030712] to-black text-white pt-20">
+    <section id="about" className="relative bg-gradient-to-br from-black via-[#030712] to-black text-white pt-20 pb-20">
       {/* Gradiente radial sutil para textura */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(59,130,246,0.12)_1px,transparent_1px)] [background-size:16px_16px] opacity-30" />
 
@@ -56,6 +56,12 @@ export default function InnovationSection() {
           </div>
         </div>
       </div>
-      </section>
+            {/* Swoosh divider to next section */}
+      <div className="absolute bottom-0 left-0 w-full h-20 overflow-hidden">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-full">
+          <path d="M0,100 C480,0 960,0 1440,100 L1440,100 L0,100 Z" fill="#FFFFFF"></path>
+        </svg>
+      </div>
+    </section>
   );
 }
