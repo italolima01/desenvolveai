@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function HeroSection() {
   return (
-    <div id="hero" className="relative h-screen flex items-center justify-center text-center">
+    <div id="hero" className="relative h-screen flex items-center justify-center text-center overflow-x-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-gradient-to-br from-black via-[#030712] to-black"
