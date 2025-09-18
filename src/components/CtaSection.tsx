@@ -1,29 +1,46 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 export default function CtaSection() {
   return (
-    <section id="cta" className="bg-white text-gray-800 py-20 px-4">
-      <div className="container mx-auto text-center">
-        <motion.div
+    <section id="cta" className="py-20 bg-white text-center">
+      <div className="container mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-4xl font-bold mb-6 text-gray-900"
+        >
+          Pronto para transformar seu negócio com IA?
+        </motion.h2>
+        <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-xl mb-8 max-w-2xl mx-auto text-gray-600"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Pronto para transformar seu negócio com <span className="text-[rgb(var(--color-primary))]">IA</span>?
-          </h2>
-          <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-            Vamos conversar sobre como nossas soluções de inteligência artificial podem impulsionar seus resultados!
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: '0px 0px 30px rgba(59, 130, 246, 0.7)' }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[rgb(var(--color-primary))] text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-lg"
+          Entre em contato conosco e descubra como nossas soluções personalizadas podem impulsionar sua empresa.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ type: "spring", stiffness: 100, damping: 10, delay: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <Link
+            to="contact" // Assuming a contact section exists or will be created
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="btn-primary inline-block cursor-pointer"
           >
-            Começar Agora
-          </motion.button>
+            Fale Conosco
+          </Link>
         </motion.div>
       </div>
     </section>

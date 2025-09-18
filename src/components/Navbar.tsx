@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="container mx-auto">
         <div className="glass-effect rounded-xl px-6 py-4 shadow-2xl border border-[rgba(59,130,246,0.35)]">
           <div className="flex justify-between items-center relative">
-                        <div className="w-1/4">
+                        <div className="flex-shrink-0">
               <Link to="hero" spy={true} smooth={true} offset={-70} duration={500} className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-[rgb(var(--color-primary))] transition-all duration-300 hover:scale-105 transform">
                 <Image src="/images/Logo_DesenrolaAi.svg" alt="Desenrola.AI Logo" width={64} height={64} />
                 <span>DESENROLA.AI</span>
@@ -47,7 +47,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden text-white absolute right-0 top-0"
+              className="md:hidden text-white"
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg 
